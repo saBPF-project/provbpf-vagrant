@@ -104,6 +104,9 @@ Vagrant.configure(2) do |config|
     sudo dnf -y -v install libcap
     sudo dnf -y -v install openssl
     sudo dnf -y -v install valgrind
+    sudo dnf -y -v install binutils-devel
+    sudo dnf -y -v install readline-devel
+    sudo dnf -y -v install libcap-devel
 
     # make it so that /tmp is cleaned on reboot
     touch /etc/tmpfiles.d/boot.conf
