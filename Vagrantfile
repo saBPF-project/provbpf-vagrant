@@ -107,6 +107,7 @@ Vagrant.configure(2) do |config|
     sudo dnf -y -v install binutils-devel
     sudo dnf -y -v install readline-devel
     sudo dnf -y -v install libcap-devel
+    sudo dnf -y -v install ruby
 
     # make it so that /tmp is cleaned on reboot
     touch /etc/tmpfiles.d/boot.conf
