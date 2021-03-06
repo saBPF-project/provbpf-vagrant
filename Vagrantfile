@@ -87,7 +87,7 @@ Vagrant.configure(2) do |config|
     sudo dnf -y -v install fedpkg fedora-packager rpmdevtools ncurses-devel
     sudo dnf -y -v install cmake clang gcc-c++ wget git pesign grubby
     sudo dnf -y -v install openssl-devel bc nano patch mosquitto sparse
-    sudo dnf -y -v install flawfinder elfutils-libelf-devel
+    sudo dnf -y -v install flawfinder
     sudo dnf -y -v install bison flex
     sudo dnf -y -v install uthash-devel
     sudo dnf -y -v install inih-devel
@@ -100,13 +100,14 @@ Vagrant.configure(2) do |config|
     sudo dnf -y -v install alien
     sudo dnf -y -v install dwarves
     sudo dnf -y -v install python3.8 python3-devel
-    sudo dnf -y -v install llvm bpftool libbpf libbpf-devel elfutils-libelf
+    sudo dnf -y -v install llvm elfutils-libelf elfutils-libelf-devel
     sudo dnf -y -v install libcap
     sudo dnf -y -v install openssl
     sudo dnf -y -v install valgrind
     sudo dnf -y -v install binutils-devel
     sudo dnf -y -v install readline-devel
     sudo dnf -y -v install libcap-devel
+    sudo dnf -y -v install ruby
 
     # make it so that /tmp is cleaned on reboot
     touch /etc/tmpfiles.d/boot.conf
